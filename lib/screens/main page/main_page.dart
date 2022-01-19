@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
-
   @override
   _MainPageState createState() => _MainPageState();
 }
@@ -14,7 +13,7 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       body: Center(
         child: Text(
-          "main page" ,
+          "main page",
         ),
       ),
     );
