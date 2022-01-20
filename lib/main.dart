@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:gdg_envents_app/screens/login_page.dart';
+import 'package:gdg_envents_app/screens/login/login_page.dart';
+// import 'package:flutter/services.dart';
 // import 'package:gdg_envents_app/screens/main%20page/main_page.dart';
-import 'package:google_fonts/google_fonts.dart';
+// import 'package:google_fonts/google_fonts.dart';
 
 //this is abdelghani code
 // void main() {
@@ -12,9 +12,13 @@ import 'package:google_fonts/google_fonts.dart';
 void main() {
   // SystemChrome.setEnabledSystemUIMode([SystemUiOverlay.bottom]);
   runApp(MaterialApp(
+    // theme: ThemeData(
+    //   fontFamily: 'GoogleSans',
+    // ),
     theme: ThemeData(
-      fontFamily: 'GoogleSans',
-    ),
+        outlinedButtonTheme: OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(primary: Colors.black),
+    )),
     home: LoginPage(),
     debugShowCheckedModeBanner: false,
   ));
