@@ -26,7 +26,7 @@ class _MainPageState extends State<MainPage> {
       body: SingleChildScrollView(
         child: SafeArea(
             child: Container(
-          padding: EdgeInsets.all(10.0),
+          padding: EdgeInsets.only(left: 2, right: 2),
           child: Column(
             children: [
               Card(
@@ -49,7 +49,7 @@ class _MainPageState extends State<MainPage> {
                             Container(
                               padding: EdgeInsets.symmetric(horizontal: 20),
                               child: CircleAvatar(
-                                backgroundColor: Colors.brown.shade800,
+                                backgroundColor: Colors.white,
                               ),
                             ),
                             Container(
@@ -63,15 +63,10 @@ class _MainPageState extends State<MainPage> {
                             ),
                           ]),
                           Container(
-                            padding: const EdgeInsets.symmetric(
-                                vertical: 0, horizontal: 20),
-                            child: CircleAvatar(
-                                backgroundColor: Colors.brown.shade800
-                                // child: SvgPicture.asset(
-                                //   gdg
-                                // ),
-                                ),
-                          ),
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 0, horizontal: 20),
+                              child:
+                                  CircleAvatar(backgroundColor: Colors.white)),
                         ],
                       ),
                       Container(
@@ -117,9 +112,11 @@ class _MainPageState extends State<MainPage> {
                   ),
                 ),
               ),
+              SizedBox(height: height / 45),
               Container(
                 alignment: Alignment.centerLeft,
-                padding: EdgeInsets.symmetric(vertical: height / 50),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                 child: Text(
                   'Our Next Events',
                   style: GoogleFonts.poppins(
@@ -172,13 +169,13 @@ class _MainPageState extends State<MainPage> {
                     ),
                   ),
                   Card(
-                    shape: RoundedRectangleBorder(
+                    shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
                     ),
-                    color: Color(0xffF2F2F2),
+                    color: const Color(0xffF2F2F2),
                     child: Container(
                       alignment: Alignment.center,
-                      child: Text(
+                      child: const Text(
                         '#Workshop',
                         style: TextStyle(
                           fontSize: 16,
@@ -197,7 +194,7 @@ class _MainPageState extends State<MainPage> {
                     color: Color(0xffF2F2F2),
                     child: Container(
                       alignment: Alignment.center,
-                      child: Text(
+                      child: const Text(
                         '#Hackathon',
                         style: TextStyle(
                           fontSize: 16,
@@ -211,23 +208,24 @@ class _MainPageState extends State<MainPage> {
                   )
                 ]),
               ),
+              SizedBox(height: height / 45),
               Container(
-                height: height / 2.5,
+                height: height / 2.2,
                 width: width,
                 child: Card(
                     elevation: 5,
                     color: Color(0xffDDE4EC),
-                    shape: RoundedRectangleBorder(
+                    shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(30))),
                     child: Container(
-                      padding:
-                          EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 10, vertical: 10),
                       child: Column(children: [
                         Container(
                           height: height / 4,
                           width: width,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(Radius.circular(10)),
+                          decoration: const BoxDecoration(
+                            borderRadius: BorderRadius.all(Radius.circular(30)),
                             image: DecorationImage(
                               image: AssetImage("assets/icons/ure.png"),
                               fit: BoxFit.contain,
@@ -237,6 +235,8 @@ class _MainPageState extends State<MainPage> {
                         Container(
                           width: width,
                           alignment: Alignment.centerLeft,
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 20, vertical: 5),
                           child: Text(
                             'HACK THE BOT',
                             // textAlign: TextAlign.left,
@@ -248,40 +248,65 @@ class _MainPageState extends State<MainPage> {
                         ),
                         Container(
                           width: width,
+                          padding: EdgeInsets.symmetric(horizontal: 10),
                           alignment: Alignment.centerLeft,
                           child: Text(
                             'ALGIERS',
-                            // textAlign: TextAlign.left,
                             style: GoogleFonts.poppins(
                                 color: Colors.black,
                                 fontWeight: FontWeight.normal,
                                 fontSize: 20),
                           ),
-                        )
+                        ),
+                        Container(
+                          width: width,
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          alignment: Alignment.centerRight,
+                          child: Text(
+                            '33D 10H 12M',
+                            style: GoogleFonts.poppins(
+                                color: Colors.green,
+                                fontWeight: FontWeight.normal,
+                                fontSize: 18),
+                          ),
+                        ),
                       ]),
                     )),
-              )
+              ),
+              SizedBox(height: height / 45)
             ],
           ),
         )),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 0, // this will be set when a new tab is tapped
+        iconSize: 20,
+        currentIndex: 0,
+        backgroundColor: Colors.black,
+        elevation: 5,
+        unselectedItemColor: Colors.black,
+        fixedColor: Colors.blue, // this will be set when a new tab is tapped
         items: [
           BottomNavigationBarItem(
-            icon: new Icon(Icons.home),
-            title: new Text('Home'),
+            icon: Icon(Icons.home),
+            title: Text('Home'),
           ),
           BottomNavigationBarItem(
-            icon: new Icon(Icons.mail),
-            title: new Text('Messages'),
+            icon: Icon(Icons.mail),
+            title: Text('fe'),
+          ),
+          BottomNavigationBarItem(
+            icon: CircleAvatar(
+              backgroundColor: Colors.black,
+              radius: 20,
+            ),
+            title: Text('Home'),
           ),
           BottomNavigationBarItem(
               icon: Icon(Icons.person), title: Text('Profile')),
           BottomNavigationBarItem(
-            icon: new Icon(Icons.search),
-            title: new Text('Messages'),
-          ),
+            icon: Icon(Icons.search),
+            title: Text('Messages'),
+          )
         ],
       ),
     ));
