@@ -92,10 +92,14 @@ flutter:
         - asset: assets/fonts/GoogleSans-Regular.ttf
           style: italic
           weight: 400
-    - family: Poppins
+    - family: Poppins-light
       fonts:
         - asset: assets/fonts/Poppins-Light.ttf
-          weight: 300
+          weight: 500
+    - family: Poppins-bold
+      fonts:
+        - asset: assets/fonts/Poppins-Bold.ttf
+
 
 
   #

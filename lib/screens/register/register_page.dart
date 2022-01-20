@@ -1,20 +1,22 @@
-// ignore_for_file: prefer_const_constructors, deprecated_member_use, unnecessary_new, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unnecessary_new
 
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
-import 'package:gdg_envents_app/colors.dart';
-import 'package:gdg_envents_app/screens/register/register_page.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:gdg_envents_app/screens/login/login_page.dart';
 
-class LoginPage extends StatelessWidget {
+import '../../colors.dart';
+
+class RegisterPage extends StatelessWidget {
+  const RegisterPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) => Scaffold(
-          body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10.0),
-          child: Container(
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12.0),
+            child: Container(
               margin: const EdgeInsets.all(20.0),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
                   //space
                   SizedBox(
@@ -31,7 +33,6 @@ class LoginPage extends StatelessWidget {
                           height: 90,
                         ),
                       )),
-                  //this is "GDG Algiers" Text
                   Text(
                     'GDG Algiers',
                     style:
@@ -48,7 +49,7 @@ class LoginPage extends StatelessWidget {
                   Container(
                     alignment: Alignment.topLeft,
                     child: Text(
-                      'WELCOME BACK',
+                      'JOIN THE TEAM',
                       style: TextStyle(
                         fontFamily: 'Poppins-light',
                         color: iconsColor,
@@ -60,7 +61,7 @@ class LoginPage extends StatelessWidget {
                   Container(
                     alignment: Alignment.topLeft,
                     child: Text(
-                      'Account Log In',
+                      'Create Account',
                       style: TextStyle(
                         color: darkblue,
                         fontFamily: 'Poppins-bold',
@@ -69,9 +70,7 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  //space
                   SizedBox(height: 12),
-                  //buttons
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
@@ -99,10 +98,10 @@ class LoginPage extends StatelessWidget {
                                 Align(
                                   alignment: Alignment.centerRight,
                                   child: Text(
-                                    'Log In with Google',
+                                    'Create with Google',
                                     style: TextStyle(
                                         fontSize: 11.6,
-                                        fontFamily: 'Poppins',
+                                        fontFamily: 'Poppins-light',
                                         color: iconsColor),
                                   ),
                                 )
@@ -111,9 +110,7 @@ class LoginPage extends StatelessWidget {
                             shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(12.0),
                             ),
-                            onPressed: () {
-                              print('Pressed');
-                            },
+                            onPressed: () {},
                           ),
                         ),
                         SizedBox(
@@ -140,12 +137,11 @@ class LoginPage extends StatelessWidget {
                                 Align(
                                   alignment: Alignment.centerRight,
                                   child: Text(
-                                    'Log In with Apple',
+                                    'Create with Apple',
                                     style: TextStyle(
                                         fontSize: 11.6,
                                         fontFamily: 'Poppins',
                                         color: iconsColor),
-                                    // style: TextStyle(color: Colors.grey),
                                   ),
                                 )
                               ],
@@ -153,38 +149,54 @@ class LoginPage extends StatelessWidget {
                             shape: new RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(12.0),
                             ),
-                            // style: OutlinedButton.styleFrom(
-                            //   shape: new RoundedRectangleBorder(
-                            //       borderRadius: new BorderRadius.circular(12.0)),
-                            //   primary: Colors.black,
-                            //   backgroundColor: Colors.grey[300],
-                            // ),
-                            onPressed: () {
-                              print('Pressed');
-                            },
+                            onPressed: () {},
                           ),
                         ),
                       ],
                     ),
                   ),
-
                   //space
                   SizedBox(height: 15),
+                  //Centers text
                   Align(
                     alignment: Alignment.center,
-                    child: Text('Or Log In Using Email',
+                    child: Text('Or Create Using Email',
                         style: TextStyle(
                           color: iconsColor,
                           fontSize: 12,
-                          fontFamily: 'Poppins',
+                          fontFamily: 'Poppins-light',
                           fontWeight: FontWeight.bold,
                         )),
                   ),
+                  //space
                   SizedBox(height: 15),
+                  //Input Feilds
                   SizedBox(
-                    height: 300,
+                    height: 500,
                     child: Column(
                       children: <Widget>[
+                        TextFormField(
+                          keyboardType: TextInputType.emailAddress,
+                          decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                              borderSide: BorderSide(width: 2),
+                              borderRadius: const BorderRadius.all(
+                                const Radius.circular(12.0),
+                              ),
+                            ),
+
+                            suffixIcon: Icon(Icons.person),
+                            // Image.asset('assets/images/gdg.png'),
+                            hintText: 'Enter you User name',
+                            hintStyle: new TextStyle(
+                              fontSize: 12,
+                              fontFamily: 'Poppins',
+                              fontStyle: FontStyle.italic,
+                            ),
+                          ),
+                        ),
+
+                        SizedBox(height: 10),
                         // email Input
                         TextFormField(
                           keyboardType: TextInputType.emailAddress,
@@ -206,6 +218,7 @@ class LoginPage extends StatelessWidget {
                             ),
                           ),
                         ),
+
                         SizedBox(height: 10),
                         TextFormField(
                           style: new TextStyle(
@@ -239,7 +252,7 @@ class LoginPage extends StatelessWidget {
                             onPressed: () {},
                             // style: ,
                             child: Text(
-                              'Continue',
+                              'Register',
                               style: TextStyle(
                                 color: white,
                                 fontSize: 20,
@@ -255,7 +268,7 @@ class LoginPage extends StatelessWidget {
                           children: <Widget>[
                             Align(
                               alignment: Alignment.center,
-                              child: Text('Don\'t have an Account?',
+                              child: Text('Already a Team Member?',
                                   style: TextStyle(
                                     color: iconsColor,
                                     fontSize: 12,
@@ -269,12 +282,11 @@ class LoginPage extends StatelessWidget {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) =>
-                                            const RegisterPage()),
+                                        builder: (context) => LoginPage()),
                                   );
                                 },
                                 child: Text(
-                                  'REGISTER',
+                                  'LOG IN',
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 ),
                               ),
@@ -285,7 +297,9 @@ class LoginPage extends StatelessWidget {
                     ),
                   )
                 ],
-              )),
+              ),
+            ),
+          ),
         ),
-      ));
+      );
 }
