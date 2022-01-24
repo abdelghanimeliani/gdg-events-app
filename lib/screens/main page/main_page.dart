@@ -14,7 +14,7 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       body: Center(
         child: Text(
-          "main page" ,
+          "main page",
         ),
       ),
     );
