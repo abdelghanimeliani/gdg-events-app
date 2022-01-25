@@ -37,7 +37,7 @@ dependencies:
   google_fonts: ^2.0.0
   carousel_slider: ^4.0.0
   flutter_svg: ^1.0.3
-
+  google_maps_flutter: ^2.1.1
 dev_dependencies:
   flutter_test:
     sdk: flutter

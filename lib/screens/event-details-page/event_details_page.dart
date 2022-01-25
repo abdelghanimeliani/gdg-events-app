@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gdg_envents_app/screens/event-details-page/map.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -54,7 +55,7 @@ class _EventDetailsPageState extends State<EventDetailsPage> {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(20.0),
                   child: Image(
-                    height: 243.0,
+                    height: 300.0,
                     width: 315.0,
                     image: NetworkImage(e.img),
                     fit: BoxFit.cover,
@@ -66,8 +67,8 @@ class _EventDetailsPageState extends State<EventDetailsPage> {
                     decoration: const BoxDecoration(
                       color: Color(0xAA000000),
                       borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(20.0),
-                          bottomRight: Radius.circular(20.0)),
+                          bottomLeft: Radius.circular(26.0),
+                          bottomRight: Radius.circular(26.0)),
                     ),
                     padding: const EdgeInsets.only(
                         top: 10.0, bottom: 10.0, left: 30.0),
@@ -107,7 +108,7 @@ class _EventDetailsPageState extends State<EventDetailsPage> {
       backgroundColor: const Color(0xffdde4ec),
       body: SingleChildScrollView(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               margin:
@@ -216,10 +217,10 @@ class _EventDetailsPageState extends State<EventDetailsPage> {
             SizedBox(
               width: 900,
               child: CarouselSlider(
-                  options: CarouselOptions(height: 243.0), items: urlImages),
+                  options: CarouselOptions(height: 300.0), items: urlImages),
             ),
             const SizedBox(
-              height: 20,
+              height: 60,
             ),
             Container(
               alignment: Alignment.center,
@@ -305,195 +306,203 @@ class _EventDetailsPageState extends State<EventDetailsPage> {
                 ),
               ],
             ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  "08:30 - 09:00",
-                  style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.w300,
-                    fontSize: 20,
-                  ),
-                ),
-                SizedBox(
-                  height: 60.0,
-                  width: 320.0,
-                  child: Card(
-                    elevation: 5,
-                    color: const Color(0xffDDE4EC),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0)),
-                    child: Center(
-                      child: Text(
-                        "Check In ",
+            Center(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "08:30 - 09:00",
                         style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18,
+                          fontWeight: FontWeight.w300,
+                          fontSize: 20,
                         ),
                       ),
-                    ),
-                  ),
-                ),
-                Container(
-                  margin:
-                      const EdgeInsets.symmetric(horizontal: 0, vertical: 15),
-                  height: 23.0,
-                  width: 3,
-                  color: const Color(0xff707070),
-                )
-              ],
-            ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  "09:00 - 09:15",
-                  style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.w300,
-                    fontSize: 20,
-                  ),
-                ),
-                SizedBox(
-                  height: 60.0,
-                  width: 320.0,
-                  child: Card(
-                    elevation: 5,
-                    color: const Color(0xffDDE4EC),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0)),
-                    child: Center(
-                      child: Text(
-                        "Opening Ceremony",
-                        style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18,
+                      SizedBox(
+                        height: 60.0,
+                        width: 320.0,
+                        child: Card(
+                          elevation: 5,
+                          color: const Color(0xffDDE4EC),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0)),
+                          child: Center(
+                            child: Text(
+                              "Check In ",
+                              style: GoogleFonts.poppins(
+                                fontWeight: FontWeight.w600,
+                                fontSize: 18,
+                              ),
+                            ),
+                          ),
                         ),
                       ),
-                    ),
+                      Container(
+                        margin: const EdgeInsets.symmetric(
+                            horizontal: 0, vertical: 15),
+                        height: 23.0,
+                        width: 3,
+                        color: const Color(0xff707070),
+                      )
+                    ],
                   ),
-                ),
-                Container(
-                  margin:
-                      const EdgeInsets.symmetric(horizontal: 0, vertical: 15),
-                  height: 23.0,
-                  width: 3,
-                  color: const Color(0xff707070),
-                )
-              ],
-            ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  "09:30 - 12:00",
-                  style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.w300,
-                    fontSize: 20,
-                  ),
-                ),
-                SizedBox(
-                  height: 79.0,
-                  width: 320.0,
-                  child: Card(
-                    elevation: 5,
-                    color: const Color(0xffDDE4EC),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0)),
-                    child: Center(
-                      child: RichText(
-                        text: TextSpan(
-                            text: 'Talk : ',
-                            style: GoogleFonts.poppins(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w300,
-                              color: Colors.black,
-                            ),
-                            children: [
-                              TextSpan(
-                                text: 'What is a bot ?\n',
-                                style: GoogleFonts.poppins(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
-                                ),
-                              ),
-                              TextSpan(
-                                text: '\t\t\t\t\tAbdelghani Meliani',
-                                style: GoogleFonts.poppins(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w300,
-                                  color: Colors.black,
-                                ),
-                              )
-                            ]),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "09:00 - 09:15",
+                        style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w300,
+                          fontSize: 20,
+                        ),
                       ),
-                    ),
-                  ),
-                ),
-                Container(
-                  margin:
-                      const EdgeInsets.symmetric(horizontal: 0, vertical: 15),
-                  height: 23.0,
-                  width: 3,
-                  color: const Color(0xff707070),
-                )
-              ],
-            ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  "13:00 - 16:00",
-                  style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.w300,
-                    fontSize: 20,
-                  ),
-                ),
-                SizedBox(
-                  height: 79.0,
-                  width: 320.0,
-                  child: Card(
-                    elevation: 5,
-                    color: const Color(0xffDDE4EC),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0)),
-                    child: Center(
-                      child: RichText(
-                        text: TextSpan(
-                            text: 'WorkShop : ',
-                            style: GoogleFonts.poppins(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w300,
-                              color: Colors.black,
-                            ),
-                            children: [
-                              TextSpan(
-                                text:
-                                    'How to create a bot ?\n\t\t\t\t\t\t\t\t\t',
-                                style: GoogleFonts.poppins(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
-                                ),
+                      SizedBox(
+                        height: 60.0,
+                        width: 320.0,
+                        child: Card(
+                          elevation: 5,
+                          color: const Color(0xffDDE4EC),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0)),
+                          child: Center(
+                            child: Text(
+                              "Opening Ceremony",
+                              style: GoogleFonts.poppins(
+                                fontWeight: FontWeight.w600,
+                                fontSize: 18,
                               ),
-                              TextSpan(
-                                text: '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tElon Musk',
-                                style: GoogleFonts.poppins(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w300,
-                                  color: Colors.black,
-                                ),
-                              )
-                            ]),
+                            ),
+                          ),
+                        ),
                       ),
-                    ),
+                      Container(
+                        margin: const EdgeInsets.symmetric(
+                            horizontal: 0, vertical: 15),
+                        height: 23.0,
+                        width: 3,
+                        color: const Color(0xff707070),
+                      )
+                    ],
                   ),
-                ),
-                Container(
-                  margin:
-                      const EdgeInsets.symmetric(horizontal: 0, vertical: 15),
-                ),
-              ],
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "09:30 - 12:00",
+                        style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w300,
+                          fontSize: 20,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 79.0,
+                        width: 320.0,
+                        child: Card(
+                          elevation: 5,
+                          color: const Color(0xffDDE4EC),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0)),
+                          child: Center(
+                            child: RichText(
+                              text: TextSpan(
+                                  text: 'Talk : ',
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w300,
+                                    color: Colors.black,
+                                  ),
+                                  children: [
+                                    TextSpan(
+                                      text: 'What is a bot ?\n',
+                                      style: GoogleFonts.poppins(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text: '\t\t\t\t\tAbdelghani Meliani',
+                                      style: GoogleFonts.poppins(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w300,
+                                        color: Colors.black,
+                                      ),
+                                    )
+                                  ]),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.symmetric(
+                            horizontal: 0, vertical: 15),
+                        height: 23.0,
+                        width: 3,
+                        color: const Color(0xff707070),
+                      )
+                    ],
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "13:00 - 16:00",
+                        style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w300,
+                          fontSize: 20,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 79.0,
+                        width: 320.0,
+                        child: Card(
+                          elevation: 5,
+                          color: const Color(0xffDDE4EC),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0)),
+                          child: Center(
+                            child: RichText(
+                              text: TextSpan(
+                                  text: 'WorkShop : ',
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w300,
+                                    color: Colors.black,
+                                  ),
+                                  children: [
+                                    TextSpan(
+                                      text:
+                                          'How to create a bot ?\n\t\t\t\t\t\t\t\t\t',
+                                      style: GoogleFonts.poppins(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text:
+                                          '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tElon Musk',
+                                      style: GoogleFonts.poppins(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w300,
+                                        color: Colors.black,
+                                      ),
+                                    )
+                                  ]),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.symmetric(
+                            horizontal: 0, vertical: 15),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
             const SizedBox(
               height: 20,
@@ -568,15 +577,9 @@ class _EventDetailsPageState extends State<EventDetailsPage> {
                 ],
               ),
             ),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(20.0),
-              child: const Image(
-                height: 309.0,
-                width: 287.0,
-                image: NetworkImage(
-                    "https://img.bfmtv.com/c/630/420/8f1/eb82bf1553991f132ad99c521f3a9.jpg"),
-                fit: BoxFit.cover,
-              ),
+            const MapSample(),
+            const SizedBox(
+              height: 60,
             ),
           ],
         ),
