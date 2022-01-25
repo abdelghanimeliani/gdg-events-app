@@ -584,57 +584,6 @@ class _EventDetailsPageState extends State<EventDetailsPage> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        backgroundColor: const Color(0xffDDE4EC),
-        items: [
-          const BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home,
-              color: Colors.grey,
-              size: 30,
-            ),
-            label: "",
-          ),
-          const BottomNavigationBarItem(
-            icon: Icon(
-              Icons.explore,
-              color: Colors.grey,
-              size: 28,
-            ),
-            label: "",
-          ),
-          BottomNavigationBarItem(
-            icon: CircleAvatar(
-              radius: 25,
-              child: SvgPicture.asset(
-                "images/embed-code.svg",
-                color: Colors.white,
-                width: 30,
-                height: 20,
-              ),
-              backgroundColor: Colors.red,
-            ),
-            label: "",
-          ),
-          const BottomNavigationBarItem(
-            icon: Icon(
-              Icons.hourglass_top,
-              color: Colors.grey,
-              size: 28,
-            ),
-            label: "",
-          ),
-          const BottomNavigationBarItem(
-            icon: Icon(
-              Icons.view_list,
-              color: Colors.grey,
-              size: 28,
-            ),
-            label: "",
-          )
-        ],
-      ),
     );
   }
 }
