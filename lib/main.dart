@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:gdg_envents_app/screens/login/login_page.dart';
-// import 'package:flutter/services.dart';
-// import 'package:gdg_envents_app/screens/main%20page/main_page.dart';
-// import 'package:google_fonts/google_fonts.dart';
 
-//this is abdelghani code
-// void main() {
-//   runApp(const MaterialApp(home:MainPage() ,));
-// }
+import 'package:gdg_envents_app/screens/event-details-page/event_details_page.dart';
+import 'package:gdg_envents_app/screens/main%20page/main_page.dart';
+
+
 
 void main() {
   // SystemChrome.setEnabledSystemUIMode([SystemUiOverlay.bottom]);
@@ -54,3 +50,4 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+

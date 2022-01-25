@@ -15,6 +15,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+  carousel_slider:
+    dependency: "direct main"
+    description:
+      name: carousel_slider
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.0.0"
   characters:
     dependency: transitive
     description:
@@ -44,6 +51,7 @@ packages:
     source: hosted
     version: "1.15.0"
 
+
   convert:
     dependency: transitive
     description:
@@ -51,6 +59,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.1"
+
 
   crypto:
     dependency: transitive
@@ -105,12 +114,15 @@ packages:
       name: flutter_svg
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.15.0"
+
+    version: "1.0.3"
+
   flutter_test:
     dependency: "direct dev"
     description: flutter
     source: sdk
     version: "0.0.0"
+
 
   font_awesome_flutter:
     dependency: "direct main"
@@ -177,14 +189,17 @@ packages:
       name: path_drawing
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.4.1+1"
+
+    version: "1.0.0"
+
   path_parsing:
     dependency: transitive
     description:
       name: path_parsing
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.4"
+
+    version: "1.0.0"
 
   path_provider:
     dependency: transitive
@@ -242,7 +257,8 @@ packages:
       name: petitparser
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.1.0"
+
+    version: "4.4.0"
 
   platform:
     dependency: transitive
@@ -325,7 +341,6 @@ packages:
       name: vector_math
       url: "https://pub.dartlang.org"
     source: hosted
-
     version: "2.1.1"
 
   win32:
@@ -334,7 +349,9 @@ packages:
       name: win32
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.3.6"
+
+    version: "2.3.8"
+
   xdg_directories:
     dependency: transitive
     description:
@@ -349,6 +366,7 @@ packages:
       name: xml
       url: "https://pub.dartlang.org"
     source: hosted
+
     version: "3.7.0"
 
 sdks:
