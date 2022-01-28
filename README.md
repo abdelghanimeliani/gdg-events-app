@@ -4,6 +4,8 @@
   <img src="assets/images/gdg.png" width="100" alt="gdg_logo"/></img>
   <h1 align="center"  style="font-family:'Poppins'">
   GDG EVENTS
+
+  ![Team](https://img.shields.io/badge/CreatedWith-Team__5--codeit-brightgreen)
 </h1>
 <hr>
 </p>
