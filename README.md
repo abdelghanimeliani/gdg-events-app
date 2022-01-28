@@ -75,10 +75,9 @@
 
 
 ## Team Members
-- [Abdelghani Meliani](https://github.com/abdelghanimeliani)
+
 - [Ayoub Kezzoula](https://github.com/AyoubKezzoula)
 - [Yahia Ilyes](https://github.com/ilyes-d)
-- [Ines Abdelaziz](https://github.com/Ines-Abdelaziz)
 - [Marouane Benbetka](https://github.com/MarouaneBenbetka)
 - [Rafik DOUHA](https://github.com/rafaucoin)
 
