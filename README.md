@@ -11,14 +11,16 @@
 <!-- [TOC] -->
 
 
-|<h3 style ="font-family:Poppins" >Table of contents</h3> |
-|:---------------------------:|
-| [What it's all about](#what-its-all-about)|
-|[Why EVENTS app](#why-events-app)|
-| [Technologies used](#technologies-used)|
-| [Project Demonstration](#project-demonstration)|
-|[Requirement](#requirement)|
-|[Team Members](#team-members)|
+|#|<h3 style ="font-family:Poppins" >Table of contents</h3> |
+|:--:|:---------------------------:|
+|1| [What it's all about](#what-its-all-about)|
+|2|[Why Events app ?](#why-events-app)|
+|3| [Technologies used](#technologies-used)|
+|4| [Project Demonstration](#project-demonstration)|
+|5|[Requirement](#requirement)|
+|6|[Team Members](#team-members)|
+
+
 
 
 
