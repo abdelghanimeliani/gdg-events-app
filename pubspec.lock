@@ -43,7 +43,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.15.0"
-
   convert:
     dependency: transitive
     description:
@@ -51,7 +50,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.1"
-
   crypto:
     dependency: transitive
     description:
@@ -111,7 +109,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-
   font_awesome_flutter:
     dependency: "direct main"
     description:
@@ -119,8 +116,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "9.2.0"
-
-
   google_fonts:
     dependency: "direct main"
     description:
@@ -170,7 +165,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0"
-
   path_drawing:
     dependency: transitive
     description:
@@ -185,7 +179,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.4"
-
   path_provider:
     dependency: transitive
     description:
@@ -235,7 +228,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.5"
-
   petitparser:
     dependency: transitive
     description:
@@ -243,7 +235,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.1.0"
-
   platform:
     dependency: transitive
     description:
@@ -325,9 +316,7 @@ packages:
       name: vector_math
       url: "https://pub.dartlang.org"
     source: hosted
-
     version: "2.1.1"
-
   win32:
     dependency: transitive
     description:
@@ -342,7 +331,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.2.0"
-
   xml:
     dependency: transitive
     description:
@@ -350,7 +338,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.7.0"
-
 sdks:
   dart: ">=2.14.0 <3.0.0"
   flutter: ">=2.5.0"

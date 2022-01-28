@@ -1,127 +1,46 @@
-<!-- project title  -->
-<br/>
+<hr>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-<p align="center" style="width=50px" >
-  <img src="assets/images/gdg.png" width="200" alt="gdg_logo"/></img>
-</p>
-<h1 align="center" style="font-family:'Poppins'">
-  GDG events app
+<p align="center">
+  <img src="assets/images/gdg.png" width="100" alt="gdg_logo"/></img>
+  <h1 align="center"  style="font-family:'Poppins'">
+  GDG EVENTS
 </h1>
-<!-- description  -->
-### what it's all about 
-  A new Flutter project.  
-- tech used 
-- what it does 
-- **what are our next moves**
+<hr>
+</p>
+<!-- table of contents in a simple way  -->
+<!-- [TOC] -->
+
 
 |<h3 style ="font-family:Poppins" >Table of contents</h3> |
 |:---------------------------:|
-|1.  [What it's all about ?](#contributors)|
-|[<h7 style ="font-family:Poppins"> Installation and Usage<h7>](#desc)|
-|[<h5 style ="font-family:Poppins">Team Members<h5>](#desc)|
-||
-
-
-  1.
-  1. [How to **use** it ?](#how)
-
-
-
-### how
-
-
-### how to use it 
-
-### contributors 
-
-### license
+| [What it's all about](#what-its-all-about)|
+|[Why EVENTS app](#why-events-app)|
+| [Technologies used](#technologies-used)|
+| [Project Demonstration](#project-demonstration)|
+|[Requirement](#requirement)|
+|[Team Members](#team-members)|
 
 
 
-## Getting Started
+## What it's all about
+* **GDG EVENTS** app will host every **GDG ALGIERS** previous and upcoming event.
+* Each and every event will have it’s own respectful description, its speakers/mentors, a countdown and a form (If it’s upcoming event).
+* The event’s dedicated photo gallery, It’s location and the event’s agenda. 
+* The organizers will be shouted out , It will also feature a feedback section.
 
-# desc
+## Why Events app
+* Why creating a gdg events application ?, what problems we can solve with it?, those two question may apear when you see this repo, well what our objectives from this is that making events announcement easy for all kind of users publishers or attended, and users can see events gallery and get motivated to attend to one of those events.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-# Login/SigIn Page 
-<figure class="video_container">
-  <iframe src="https://www.youtube.com/watch?v=hkpF-UwGSgM" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-<!-- project title  -->
-<br/>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-<p align="center" style="width=50px" >
-  <img src="assets/images/gdg.png" width="200" alt="gdg_logo"/></img>
-</p>
-<h1 align="center" style="font-family:'Poppins'">
-  GDG events app
-</h1>
-<!-- description  -->
-### what it's all about 
-  A new Flutter project.  
-- tech used 
-- what it does 
-- **what are our next moves**
-
-|<h3 style ="font-family:Poppins" >Table of contents</h3> |
-|:---------------------------:|
-|1.  [What it's all about ?](#contributors)|
-|[<h7 style ="font-family:Poppins"> Installation and Usage<h7>](#desc)|
-|[<h5 style ="font-family:Poppins">Team Members<h5>](#desc)|
-||
+## Technologies used
+* This application created using ![Flutter](https://img.shields.io/badge/Flutter-v2.8.1-blue)
 
 
-  1.
-  1. [How to **use** it ?](#how)
+## Project Demonstration
+  * ### Screens
+    1. Login/SignIn Page
 
 
 
-### how
+# Team Members
 
 
-### how to use it 
-
-### contributors 
-
-### license
-
-
-
-## Getting Started
-
-# desc
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-# Login/SigIn Page 
-<figure class="video_container">
-  <iframe src="https://www.youtube.com/watch?v=hkpF-UwGSgM" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-
-# Login/SigIn Page 
-<!-- blank line -->
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true">
-    <source src="Login_SignIn.mp4" type="video/mp4">
-  </video>
-</figure>
-<!-- blank line -->
