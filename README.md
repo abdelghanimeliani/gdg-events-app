@@ -5,8 +5,11 @@
   <h1 align="center"  style="font-family:'Poppins'">
   GDG EVENTS
 
-  ![Team](https://img.shields.io/badge/CreatedWith-Team__5--codeit-brightgreen)
+![Team](https://img.shields.io/badge/CreatedWith-Team__5--codeit-brightgreen)
 </h1>
+
+
+
 <hr>
 </p>
 <!-- table of contents in a simple way  -->
@@ -24,16 +27,14 @@
 
 
 
-
-
 ## What it's all about
-* **GDG EVENTS** app will host every **GDG ALGIERS** previous and upcoming event.
-* Each and every event will have it’s own respectful description, its speakers/mentors, a countdown and a form (If it’s upcoming event).
-* The event’s dedicated photo gallery, It’s location and the event’s agenda. 
-* The organizers will be shouted out , It will also feature a feedback section.
+>* **GDG EVENTS** app will host every **GDG ALGIERS** previous and upcoming event.
+>* Each and every event will have it’s own respectful description, its speakers/mentors, a countdown and a form (If it’s upcoming event).
+>* The event’s dedicated photo gallery, It’s location and the event’s agenda. 
+>* The organizers will be shouted out , It will also feature a feedback section.
 
-## Why Events app
-* Why creating a gdg events application ?, what problems we can solve with it?, those two question may apear when you see this repo, well what our objectives from this is that making events announcement easy for all kind of users publishers or attended, and users can see events gallery and get motivated to attend to one of those events.
+## Why Events app?
+* _**Why** creating a GDG events application ?_ _**What** problems we can solve with it?_ Those two question may apear when you see this repo, well what our objectives from this is that making events announcement easy for all kind of users publishers or attended, and users can see events gallery and get motivated to attend to one of those events.
 
 ## Technologies used
 * This application created using ![Flutter](https://img.shields.io/badge/Flutter-v2.8.1-blue)
@@ -41,10 +42,17 @@
 
 ## Project Demonstration
   * ### Screens
-    1. Login/SignIn Page
+    1. **Login/SignIn Page**
 
 
 
 # Team Members
+- [Abdelghani Meliani](https://github.com/abdelghanimeliani)
+- [Ayoub Kezzoula](https://github.com/AyoubKezzoula)
+- [Yahia Ilyes](https://github.com/ilyes-d)
+- [Ines Abdelaziz](https://github.com/Ines-Abdelaziz)
+- [Marouane Benbetka](https://github.com/MarouaneBenbetka)
+- [rafaucoin](https://github.com/rafaucoin)
+
 
 
