@@ -29,7 +29,7 @@
 >* **The organizers** will be shouted out , It will also feature a <u>feedback</u> section.
 
 ## Why Events app?
-* _**Why** creating a GDG events application ?_ _**What** problems we can solve with it?_ You may ask those question, well the answer is me and my team worked to make events announcement easy for all kind of users, publishers they are or attended. And what the amazing thing we did is that we added a gallery feature which is that th user can see the past events amazing moments and get motivated to attend to one of those events.
+* _**Why** creating a GDG events application ?_ _**What** problems we can solve with it?_ You can ask this question, well the answer is as follows, we have worked to make event announcement easy for all types of users and publishers. And the amazing thing that we did is we added the gallery feature that the user can see past events, amazing moments and motivation to attend one of those events.
 
 ## Technologies used
 * This application created using ![Flutter](https://img.shields.io/badge/Flutter-v2.8.1-blue)
