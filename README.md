@@ -1,4 +1,4 @@
-# this project still incomplete
+# this project is just for integrate new members in GDG Algeirs 
 
 
 
